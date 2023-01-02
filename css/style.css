@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+body {
+    color: #222;
+    line-height: 1em;
+    font-weight: 300;
+    background-color: rgb(0, 60, 241);
+    margin: 0;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1.5em;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.gnb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+}
+
+.gnb a {
+    display: block;
+    font-weight: 40px;
+    margin: 30px 0;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.gnb:hover a {
+    opacity: 0.3;
+}
+
+.gnb a:hover {
+    opacity: 1;
+}
+
+.gnb a:before {
+    content: "\f054";
+    /* position: absolute; */
+    font-family: fontawesome;
+    margin-right: 20px;
+    opacity: 0;
+}
+
+.gnb a:hover::before {
+    opacity: 1;
+}
